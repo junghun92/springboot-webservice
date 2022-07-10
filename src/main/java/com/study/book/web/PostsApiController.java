@@ -14,9 +14,11 @@ import com.study.book.web.dto.PostsSaveRequestDto;
 import com.study.book.web.dto.PostsUpdateRequestDto;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 @RequiredArgsConstructor
 @RestController
+@Slf4j
 public class PostsApiController {
 	
 	private final PostsService postsService;
