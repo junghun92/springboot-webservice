@@ -21,13 +21,13 @@ public class PostsRepositoryTest {
 	@After
 	public void cleanup() {
 		postsRepository.deleteAll();
-	}
+	} 
 	
 	@Test
 	public void findAll() {
 		//given
-		String title = "Å×½ºÆ® °Ô½Ã±Û";
-		String content = "Å×½ºÆ® º»¹®";
+        String title = "í…ŒìŠ¤íŠ¸ ê²Œì‹œê¸€";
+        String content = "í…ŒìŠ¤íŠ¸ ë³¸ë¬¸";
 		
 		postsRepository.save(Posts.builder()
 				.title(title)

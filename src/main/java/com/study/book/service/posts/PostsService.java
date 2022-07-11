@@ -28,7 +28,7 @@ public class PostsService {
 	@Transactional
 	public Long update(Long id, PostsUpdateRequestDto requestDto) {
 		Posts posts = postsRepository.findById(id)
-				.orElseThrow(() -> new IllegalArgumentException("ÇØ´ç °Ô½Ã±ÛÀÌ ¾ø½À´Ï´Ù. id="+id));
+				.orElseThrow(() -> new IllegalArgumentException("í•´ë‹¹ ì‚¬ìš©ìê°€ ì—†ìŠµë‹ˆë‹¤. id="+id)); 
 		
 		posts.update(requestDto.getTitle(), requestDto.getContent());
 		
@@ -37,7 +37,7 @@ public class PostsService {
 	
 	public PostsResponseDto findById(Long id) {
 		Posts entity = postsRepository.findById(id)
-				.orElseThrow(() -> new IllegalArgumentException("ÇØ´ç °Ô½Ã±ÛÀÌ ¾ø½À´Ï´Ù. id="+id));
+				.orElseThrow(() -> new IllegalArgumentException("í•´ë‹¹ ì‚¬ìš©ìê°€ ì—†ìŠµë‹ˆë‹¤. id="+id));
 		
 		return new PostsResponseDto(entity);
 	}
@@ -53,7 +53,7 @@ public class PostsService {
 	@Transactional
 	public void delete(Long id) {
 		Posts posts = postsRepository.findById(id)
-				.orElseThrow(() -> new IllegalArgumentException("ÇØ´ç °Ô½Ã±ÛÀÌ ¾ø½À´Ï´Ù. id="+id));
+				.orElseThrow(() -> new IllegalArgumentException("í•´ë‹¹ ì‚¬ìš©ìê°€ ì—†ìŠµë‹ˆë‹¤. id="+id));
 		
 		postsRepository.delete(posts);
 	}
