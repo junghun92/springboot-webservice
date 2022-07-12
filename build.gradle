@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.1.7.RELEASE'
+	id 'org.springframework.boot' version '2.4.1'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 }
@@ -17,6 +17,11 @@ configurations {
 repositories {
 	mavenCentral()
 	jcenter()
+}
+
+// for Junit 5
+test { // (2)
+    useJUnitPlatform()
 }
 
 dependencies {
@@ -44,7 +49,6 @@ dependencies {
 	}
 	
 }
-
 
 compileJava.options.encoding = 'UTF-8'
 
