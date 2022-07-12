@@ -1,4 +1,4 @@
-package com.study.book.domain.posts;
+package com.study.book.domain;
 
 import java.time.LocalDateTime;
 
@@ -17,7 +17,7 @@ import lombok.Getter;
 public abstract class BaseTimeEntity {
 	
 	@CreatedDate
-	private LocalDateTime creDateTime;
+	private LocalDateTime createdDate;
 	
 	@LastModifiedDate
 	private LocalDateTime modifiedDate;

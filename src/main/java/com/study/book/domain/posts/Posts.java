@@ -6,6 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.study.book.domain.BaseTimeEntity;
+
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

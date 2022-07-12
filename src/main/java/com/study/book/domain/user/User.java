@@ -8,7 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import com.study.book.domain.posts.BaseTimeEntity;
+import com.study.book.domain.BaseTimeEntity;
 
 import lombok.Builder;
 import lombok.Getter;
